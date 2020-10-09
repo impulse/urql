@@ -25,7 +25,7 @@ export interface UseQueryArgs<V> {
 export interface UseQueryState<T> {
   fetching: boolean;
   stale: boolean;
-  data?: T;
+  data?: T | undefined;
   error?: CombinedError;
   extensions?: Record<string, any>;
   operation?: Operation;
